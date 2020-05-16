@@ -6,7 +6,7 @@ public class PascalsTriangle {
         // iteration 7
 
         // number of rows in triangle 
-        int n = 10; 
+        int n = Integer.parseInt(args[0]); 
 
         // sum previous row's elements to build current row
         int sum = 0; 
