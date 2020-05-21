@@ -1,0 +1,151 @@
+----------------
+--OOP Concepts--
+----------------
+
+Objects have state and behavior
+State refers to its current state
+State stored in fields (variables)
+Behavior is what it can do
+exposed through methods (functions)
+Data Encapsulation - hiding internal state and requiring all interaction to be performed through an object’s methods. 
+
+
+“Instance of a class of objects known as _”
+Class is an instance of a particular object, it is built from and is an iteration of a blueprint of that object. 
+
+-----------
+--Gotchas--
+-----------
+
+import statement
+used in class importing other class; using an instance of the class of bikes
+import <package_name>.<class_name>
+
+package statement
+used in original class from which the instance is created
+package <package_name>
+package name must also be the name of the enclosing directory of the class
+src/<package_name>/<class>.java
+
+
+
+------------------------
+--What is Inheritance?--
+------------------------
+
+classes inherit commonly used state and behavior from other classes
+superclass is the class from which you are inheriting 
+subclass is the class which is inheriting
+each class is allowed only one direct superclass
+each subclass has the potential for unlimited number of subclasses
+
+syntax:
+class <subclass> extends <superclass> {
+	new fields and methods defining <subclass> go here
+}
+
+---
+
+when compiling from the src directory, the main app should be in the src directory, not a subdirectory within the src directory
+for example, this is correct: ./src/<main_class>
+this is not: ./src/<subdirectory>/<main_class>
+
+
+
+-------------------------
+--What is an Interface?--
+-------------------------
+
+methods are the way an object interfaces with the outside world. 
+in most common form, interface is a group of methods with empty bodies
+
+---
+
+packages are similar to directories in computer. 
+
+
+
+-------------
+--Variables--
+-------------
+
+instance variables; non-static fields - unique to each instance of a class, declared without the static keyword. 
+class variables; static fields - any field declared with static modifier, which indicates there is exactly one copy in existence. can use keyword final to indicate variable will never change. 
+local variables - methods can store temporary state in local variables. declared between opening and closing braces of a method. no special keyword. 
+parameters - arguments for the method. 
+
+can use $ or _ to start, but practice is discouraged. 
+use camelCase. 
+
+
+
+------------------------
+--Primitive Data Types--
+------------------------
+
+byte - 8-bit integer
+short - 16-bit integer
+int - 32-bit integer, has an Integer class.
+long - has a Long class, use for values wider than int. 
+float - 32-bit floating point, not usefor for precise values, like currency. instead use BigDecimal
+double - 64-bit floating point, default for decimal, do not use for precise values. 
+boolean
+char - 16-bit unicode character. 
+
+also character strings through java.lang.String class
+String objects are immutable, cannot be changed. 
+
+default values are 0, null, or false. 
+
+primitives do not use new keyword because they are not objects. 
+
+literals are represented directly in code without requiring computation, can assign literal to primitive.
+integer literals, longs end with L. 
+floating point literals end with F or D. 
+character and string literals
+single quotes for char literals and double quotes for String literals. 
+can use underscore only between numerical literals, can be used as separator
+
+---
+
+prefix cs postfix
+both eventually evaluate to the same value
+however, prefix returns the update value
+while postfix returns the old value. 
+
+-----------------------------------
+--Expressions, Statements, Blocks--
+-----------------------------------
+
+Expressions
+a manipulation of literals.  
+example of expression: 2 + 2.
+example of compound expression: 2 + 2 * 5.
+
+Statements
+expressions Statements
+example of expressions statements: int five = 2 + 2;
+control flow statements
+direct flow of code (order of execution)
+if else, loops, etc.
+
+Blocks
+group of statements between curly braces
+
+---------------------------
+--Control Flow Statements--
+---------------------------
+
+decision-making 
+if statements
+switch
+
+looping 
+for
+while
+do-while
+
+branching 
+break
+continue
+return
